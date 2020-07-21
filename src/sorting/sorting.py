@@ -4,7 +4,25 @@ def merge(arrA, arrB):
     merged_arr = [0] * elements
 
     # Your code here
+    # Loop through the merged array
+    # If the arrays are bigger than zero, find out which element is bigger
+    # pop the smaller element into the merged_arr
+    for i in range(len(merged_arr)):
+        if len(arrA) > 0 and len(arrB) > 0:
+            #if arrA at the 0 index is bigger than arrB at 0 index, pop out the element in arrB's 0 index
+            if arrA[0] > arrB[0]:
+                merged_arr[i] = arrB.pop(0)
 
+            else:
+                # pop the element in arrA 0 index
+                merged_arr[i] = arrA.pop(0)
+
+        else:
+            #if arrA is empty, add the remainder of arrB to merged_array
+            if len(arrA) == 0:
+                merged_arr[i] = arrB.pop(0)
+            else:
+                merged_arr[i] = arrA.pop(0)
 
     return merged_arr
 
