@@ -1,7 +1,7 @@
 
 # Created by https://www.gitignore.io/api/windows,macos,linux,python
 # Edit at https://www.gitignore.io/?templates=windows,macos,linux,python
-
+scratch.py
 ### Linux ###
 *~
 
